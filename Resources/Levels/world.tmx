@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.0" orientation="hexagonal" renderorder="right-down" width="20" height="20" tilewidth="14" tileheight="12" infinite="1" hexsidelength="6" staggeraxis="y" staggerindex="odd" nextlayerid="5" nextobjectid="2">
+ <tileset firstgid="1" name="hex mini" tilewidth="18" tileheight="18" tilecount="20" columns="5">
+  <tileoffset x="0" y="1"/>
+  <image source="../../../../../../../../../../../../Program Files/Tiled/examples/hexmini.png" width="106" height="72"/>
+ </tileset>
+ <layer id="2" name="mare" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   <chunk x="-16" y="-16" width="16" height="16">
+   eJzjY2Bg4BvFo3gUj0gMACGkDgE=
+  </chunk>
+   <chunk x="0" y="-16" width="16" height="16">
+   eJzjY2Bg4BvFo3gUj0gMACGkDgE=
+  </chunk>
+   <chunk x="16" y="-16" width="16" height="16">
+   eJzjY2Bg4BvFo3gUj0gMACGkDgE=
+  </chunk>
+   <chunk x="32" y="-16" width="16" height="16">
+   eJzjY2Bg4BvFo3gUj0gMACGkDgE=
+  </chunk>
+   <chunk x="48" y="-16" width="16" height="16">
+   eJzjY2Bg4BvFo3gUj0gMACGkDgE=
+  </chunk>
+   <chunk x="-16" y="0" width="16" height="16">
+   eJzjY2Bg4BvFo3gUj0gMACGkDgE=
+  </chunk>
+   <chunk x="0" y="0" width="16" height="16">
+   eJzjY2Bg4BvFo3gUj0gMACGkDgE=
+  </chunk>
+   <chunk x="16" y="0" width="16" height="16">
+   eJzjY2Bg4BvFo3gUj0gMACGkDgE=
+  </chunk>
+   <chunk x="32" y="0" width="16" height="16">
+   eJzjY2Bg4BvFo3gUj0gMACGkDgE=
+  </chunk>
+   <chunk x="48" y="0" width="16" height="16">
+   eJzjY2Bg4BvFo3gUj0gMACGkDgE=
+  </chunk>
+   <chunk x="-16" y="16" width="16" height="16">
+   eJzjY2Bg4BvFo3gUj0gMACGkDgE=
+  </chunk>
+   <chunk x="0" y="16" width="16" height="16">
+   eJzjY2Bg4BvFo5iOmIFIsVFMewwA910N5Q==
+  </chunk>
+   <chunk x="16" y="16" width="16" height="16">
+   eJzjY2Bg4BvFo3gUj0gMACGkDgE=
+  </chunk>
+   <chunk x="32" y="16" width="16" height="16">
+   eJzjY2Bg4BvFo3gUj0gMACGkDgE=
+  </chunk>
+   <chunk x="48" y="16" width="16" height="16">
+   eJzjY2Bg4BvFo3gUj0gMACGkDgE=
+  </chunk>
+  </data>
+ </layer>
+ <layer id="3" name="terre sx" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   <chunk x="-16" y="-16" width="16" height="16">
+   eJxjYBgFo4B+gBsHmxjABtWDjEnRS4l+ZPvZkDCp9qNjUu1HxpwU6gVhAN0MARM=
+  </chunk>
+   <chunk x="0" y="-16" width="16" height="16">
+   eJxjYBgFo4A6gBsJc0JpUvTgw2xImBOKmYlUj64PppeZgHp0Peh6mQmow6cPhBmJ1IeunxEJk2ovI1r4AwCnlgLt
+  </chunk>
+   <chunk x="16" y="-16" width="16" height="16">
+   eJxjYBgFo2DgADMQM1KgnxK91NA/1AEADDwABw==
+  </chunk>
+   <chunk x="-16" y="0" width="16" height="16">
+   eJxjYCAM+KCYDQlzQjEx+hhw6GUmw25OBvL1c6PpZSdCPzJAd7sAmfpheknVz4BmPzH+p5V+YsOflvoJpT9CeknVT6n96PoHIv6Y0TAACE4Ckw==
+  </chunk>
+   <chunk x="0" y="0" width="16" height="16">
+   eJyt0sEKACEIBFBbD7GwB///axdBYVjKcm1gbj0NiomIobeVB21WjFjR7zhPh87czH493iUy0f6s17PX4N67ceMzpOB70qIX80/BZ3dr/L+s3jna/8ehr8w4sb/iK1bzAoMQAZM=
+  </chunk>
+   <chunk x="-16" y="16" width="16" height="16">
+   eJxjYCANMKNhUgFMHyMUkwoYGcjXOwpGwShABQBXvAAY
+  </chunk>
+   <chunk x="0" y="16" width="16" height="16">
+   eJxjZBgFo2AUjFQAAAgAAAI=
+  </chunk>
+  </data>
+ </layer>
+ <layer id="4" name="terre dx" width="20" height="20">
+  <data encoding="base64" compression="zlib"/>
+ </layer>
+</map>
