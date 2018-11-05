@@ -79,6 +79,19 @@
   </data>
  </layer>
  <layer id="4" name="terre dx" width="20" height="20">
-  <data encoding="base64" compression="zlib"/>
+  <data encoding="base64" compression="zlib">
+   <chunk x="32" y="-16" width="16" height="16">
+   eJxjYBgFo2AU4AIsWDAleok1B10tMxSTox+bXph+ADaAAHk=
+  </chunk>
+   <chunk x="48" y="-16" width="16" height="16">
+   eJxjYBgFo2AUUALYgZiVAv2sUMyGhMnRj2wOsQAAHqAAQw==
+  </chunk>
+   <chunk x="32" y="0" width="16" height="16">
+   eJxjYMAOWJAwMxCzQ2kWJBoXYGHA1I+MYeL4ADX1I7sZhnmhmBQzSNWPyxyYXlYi9SMDJjRMql5eNEwqGGj96GZRoncg7aeGfmoAAKMoAe4=
+  </chunk>
+   <chunk x="48" y="0" width="16" height="16">
+   eJzNkMEKACAIQ3exm///u10SYog4imgwRPCNIQDYsi8P9GVkhc14NYNZiLwTH3s340Z/7qBkZP0h8uH9h10x7/V5yUfGCa/qB36frzUBR0sChQ==
+  </chunk>
+  </data>
  </layer>
 </map>
