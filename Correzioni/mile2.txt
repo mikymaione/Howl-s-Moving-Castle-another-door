@@ -1,3 +1,6 @@
+[ ] numerare stanze interne con legenda
+[ ] fuga sui tetti
+[ ] numerare mappa grande con legenda
 [X] riordinare indice storie vicine
 [X] anno accedemico
 [X] titolo documento
