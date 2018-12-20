@@ -1,27 +1,32 @@
+Miky
 [X] index > content
 [X] divisione game design | level design
 [X] sotto chap. 14 evidenzia sottotitolo
 [ ] mappa totale misure più grandi
 [ ] lascia muro
 [ ] colore non esplorabile ok
-[ ] percorso giocatore nelle mappe
-[ ] hint per convincere dove andare nel livello
-[ ] bloccare strade da non usare con oggetti
-[ ] reward in giro
-[ ] i pezzi di calcifer stanno tutti nello stesso livello? perché?
-[ ] i pezzi di heen stanno tutti nello stesso livello? perché?
-[ ] luci nei livelli
 [ ] suoni ambientali
 [ ] suoni specifici oggetti
 [ ] suoni giocatori
 [ ] suoni nelle mappe
 [ ] misure grotte
-[ ] calcifer è un elfo
 [ ] tetti percorso shortest path in rosso
-[ ] tetti percorso che voglio che il giocatore faccia, dare un motivo per esplorare il resto dei tetti
+
+Francesco
+[ ] luci nei livelli
+[ ] calcifer è un elfo
 [ ] macchine a stati npc
+[ ] verificare non sei troppo forte con i rewards
+[ ] verificare che "uno sputo ti uccide"
+
+Riccardo
+[ ] percorso giocatore nelle mappe
+[ ] hint per convincere dove andare nel livello
+[ ] bloccare strade da non usare con oggetti
+[ ] i pezzi di calcifer stanno tutti nello stesso livello? perché?
+[ ] i pezzi di heen stanno tutti nello stesso livello? perché?
+[ ] tetti percorso che voglio che il giocatore faccia, dare un motivo per esplorare il resto dei tetti
+[ ] reward in giro
 [ ] oggetti random
 [ ] forziere premi random
 [ ] bonus da oggetti random
-[ ] verificare non sei troppo forte con i rewards
-[ ] verificare che "uno sputo ti uccide"
