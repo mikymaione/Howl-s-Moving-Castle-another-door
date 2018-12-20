@@ -1,3 +1,4 @@
+Miky
 [ ] numerare stanze interne con legenda
 [X] fuga sui tetti
 [X] numerare mappa grande con legenda
@@ -5,29 +6,33 @@
 [X] anno accedemico
 [X] titolo documento
 [X] tempo di gioco
-[ ] numero player
 [X] link url tavola periodica
-[X] goal outline sintetici
 [X] nel sinossi dire che livello copre l'atto
 [X] act 2 testo in ordine cronologico
+[ ] numero player
+[X] * nei dialoghi non si capisce
+[X] nei dialoghi dove sono temporalmente nella storia? e in quale luogo? e quale persone trovano? (entrano nella taverna e ci sono 6 persone, si presentano, siamo sophie e tizio e caio, piacere!)
+[X] dialoghi a scelta non si capisce
+[X] togli copyright dici da dove hai preso 
+[X] dialogo ben e sophie qualcosa di strano (probabilmente è una descrizione di scena, un filmato)
+[X] multi dialoghi non si capisce
+
+Francesco
 [X] se i personaggi evolvono usare 1 diagramma con frecce
+[ ] nel diagramma di howl, sophie evolve
+[ ] orphan child se evolve evolvere nel diagramma
+[ ] calcifer paragrafo 2, evolve in armatura quindi nel diagramma devi mettere evoluzione
+[ ] layton unificare i due diagrammi con freccia evoluzione
+
+Riccardo
+[X] goal outline sintetici
 [ ] howl non si tinge più i capelli
 [ ] "howl recals" mettere in main story
-[ ] nel diagramma di howl, sophie evolve
 [ ] orphan child, secondo paragrafo chiarire e vedere rapporti con altri personaggi
-[ ] orphan child se evolve evolvere nel diagramma
-[ ] layton unificare i due diagrammi con freccia evoluzione
-[ ] calcifer paragrafo 2, evolve in armatura quindi nel diagramma devi mettere evoluzione
 [ ] ben rivedere storia
 [ ] markl ampliare comportamento, evolve nella storia?
 [ ] strega informazioni ridondanti e la parte di heen mettere in heen
 [ ] main story aggiungi parte del furto di calcifer
 [ ] ma il giocatore quando scopre la parte del passato di howl? (fai che calcifer introduce questa storia e la racconta, e che sophie ha cambiato howl in un uomo miglire)
 [ ] main story, quando succede carla? coreggi inglese
-[X] * nei dialoghi non si capisce
-[X] nei dialoghi dove sono temporalmente nella storia? e in quale luogo? e quale persone trovano? (entrano nella taverna e ci sono 6 persone, si presentano, siamo sophie e tizio e caio, piacere!)
 [X] quando il team entra si deve presentare
-[X] dialogo ben e sophie qualcosa di strano (probabilmente è una descrizione di scena, un filmato)
-[X] multi dialoghi non si capisce
-[X] dialoghi a scelta non si capisce
-[X] togli copyright dici da dove hai preso 
