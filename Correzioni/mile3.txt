@@ -1,6 +1,6 @@
-[ ] index > content
+[X] index > content
 [ ] divisione game design | level design
-[ ] sotto chap. 13 evidenzia sottotitolo
+[X] sotto chap. 14 evidenzia sottotitolo
 [ ] mappa totale misure più grandi
 [ ] lascia muro
 [ ] colore non esplorabile ok
