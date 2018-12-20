@@ -9,7 +9,7 @@ Miky
 [X] link url tavola periodica
 [X] nel sinossi dire che livello copre l'atto
 [X] act 2 testo in ordine cronologico
-[ ] numero player
+[X] numero player
 [X] * nei dialoghi non si capisce
 [X] nei dialoghi dove sono temporalmente nella storia? e in quale luogo? e quale persone trovano? (entrano nella taverna e ci sono 6 persone, si presentano, siamo sophie e tizio e caio, piacere!)
 [X] dialoghi a scelta non si capisce
