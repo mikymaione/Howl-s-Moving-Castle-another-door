@@ -1,5 +1,5 @@
 [X] index > content
-[ ] divisione game design | level design
+[X] divisione game design | level design
 [X] sotto chap. 14 evidenzia sottotitolo
 [ ] mappa totale misure più grandi
 [ ] lascia muro
