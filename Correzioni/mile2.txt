@@ -1,5 +1,5 @@
 Miky
-[ ] numerare stanze interne con legenda
+[X] numerare stanze interne con legenda
 [X] fuga sui tetti
 [X] numerare mappa grande con legenda
 [X] riordinare indice storie vicine
