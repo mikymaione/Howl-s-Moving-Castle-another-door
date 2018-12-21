@@ -3,8 +3,8 @@ Miky
 [X] divisione game design | level design
 [X] sotto chap. 14 evidenzia sottotitolo
 [X] mappa totale misure più grandi
-[ ] lascia muro
-[ ] colore non esplorabile ok
+[X] lascia muro
+[X] colore non esplorabile ok
 [ ] suoni ambientali
 [ ] suoni specifici oggetti
 [ ] suoni giocatori
