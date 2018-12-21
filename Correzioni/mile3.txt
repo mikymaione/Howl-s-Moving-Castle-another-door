@@ -23,8 +23,8 @@ Riccardo
 [ ] percorso giocatore nelle mappe
 [ ] hint per convincere dove andare nel livello
 [ ] bloccare strade da non usare con oggetti
-[ ] i pezzi di calcifer stanno tutti nello stesso livello? perché?
-[ ] i pezzi di heen stanno tutti nello stesso livello? perché?
+[X] i pezzi di calcifer stanno tutti nello stesso livello? perché?
+[X] i pezzi di heen stanno tutti nello stesso livello? perché?
 [ ] tetti percorso che voglio che il giocatore faccia, dare un motivo per esplorare il resto dei tetti
 [ ] reward in giro
 [ ] oggetti random
