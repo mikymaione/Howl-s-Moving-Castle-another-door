@@ -10,7 +10,8 @@ Miky
 [ ] suoni giocatori
 [ ] suoni nelle mappe
 [ ] misure grotte
-[ ] tetti percorso shortest path in rosso
+[X] tetti percorso shortest path in rosso
+[X] tetti percorso che voglio che il giocatore faccia, dare un motivo per esplorare il resto dei tetti
 
 Francesco
 [ ] luci nei livelli
@@ -25,7 +26,6 @@ Riccardo
 [ ] bloccare strade da non usare con oggetti
 [X] i pezzi di calcifer stanno tutti nello stesso livello? perché?
 [X] i pezzi di heen stanno tutti nello stesso livello? perché?
-[ ] tetti percorso che voglio che il giocatore faccia, dare un motivo per esplorare il resto dei tetti
 [ ] reward in giro
 [ ] oggetti random
 [ ] forziere premi random
