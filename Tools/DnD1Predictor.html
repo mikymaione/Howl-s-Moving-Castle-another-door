@@ -1,0 +1,587 @@
+﻿<html>
+<head>
+<title>D&D1 Predictor</title>
+<style>
+td {
+    padding-right: 10px;
+}
+
+tr {
+    vertical-align: top;
+}
+
+label {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+input[type=number] {
+    width: 70px;
+}
+
+.container {
+    border-bottom: 1px solid;
+    margin-bottom: 1em;
+}
+</style>
+</head>
+<body>
+<div id='probability' class='container'>
+	<h1>Probability</h1> 
+	<table><tbody>
+		<tr><td>Dice</td><td><input type='number' id='number_of_dice' value='1'/>d<input type='number' id='dice_sides' value='6' /></td></tr>
+		<tr><td>
+			<select id='type'>
+			<option value='=='>exactly (==)</option>
+			<option value='>='>at least (>=)</option>
+			<option value='<='>at most (<=)</option>
+			</select>
+		</td><td><input type='number' id='total' value='1'/></td></tr>
+		<tr><td>Times</td><td><input type='number' id='times' value='1' /></td></tr>
+	</tbody></table>
+	<p><input class="json-file-upload" target='probability' type="file" /> <button onclick='exportJSON("probability")'>Export JSON</button><input id='name' placeholder='Name'></input></p>
+	<p><button onclick='calculate_probability();'>Calculate</button></p>
+
+	<p>Result: <span id='result'></span></p>
+</div>
+
+<div id='expected_damage' class='container'>
+	<h1>Expected damage</h1>
+	<table><tbody>
+		<tr><td>Dice</td><td><input type='number' id='number_of_dice' value='1'/>d<input type='number' id='dice_sides' value='6' /></td></tr>
+		<tr><td>Hits</td><td><input type='number' id='hits' value='1' /></td></tr>
+	</tbody></table>
+	<p><input class="json-file-upload" target='expected_damage' type="file" /> <button onclick='exportJSON("expected_damage")'>Export JSON</button><input id='name' placeholder='Name'></input></p>
+	<p><button onclick='calculate_expected_damage();'>Calculate</button></p>
+
+	<p>Result: <span id='result'></span></p>
+</div>
+
+<div id='turns_to_defeat' class='container'>
+	<h1>Player vs Enemies</h1>
+	<p>Calculate the damages and the turns to defeat in a 1 vs 1 fight. You can evalutate more fights at the same time to balance the stats more easily.</p>
+	<table id='AvsB'><tbody>
+	<tr><th>Stat</th><th><input id='name_0' placeholder='Name' value='Player' /></th></tr>
+	<tr><td>HP</td><td><input type='number' id='hp_0' value='20'/></td></tr>
+	<tr><td>Weapon</td><td><input type='number' id='weapon_number_of_dice_0' value='1'/>d<input type='number' id='weapon_dice_sides_0' value='6' /></td></tr>
+	<tr><td>TAC0</td><td><input type='number' id='tac0_0' value='5'/> <label><input type='checkbox' id='always_hit_0' onchange='document.querySelector("#turns_to_defeat").querySelector("#A").querySelector("#tac0").disabled=this.checked;' />Always hit</label><br/>
+	<tr><td>AC <a href='#' title='Chance to evade hits (lower is better)'>?</a></td><td><input type='number' id='ac_0' max='9' value='5'/></td></tr>		
+	<tr><td>Saving throw</td><td><input type='number' id='saving_throw_0' value='10'/> <label><input type='checkbox' id='no_saving_throw_0' />No saving throw</label></td></tr>
+	<tr><td>Protection</td><td><input type='number' id='protection_0' value='0'/></td></tr>
+	<tr><th>Ability scores</th><th></th></tr>
+	<tr><td>STR <a href='#' title='Bonus to Hit rolls, damage rolls, opening doors'>?</a></td><td><input type='number' id='str_0' min='3' max='18' value='10' onchange='document.querySelector("#bonus_"+this.id).innerHTML=calculate_bonus(this.value);'/> Bonus: <span id='bonus_str_0'>0</span></td></tr>
+	<tr><td>INT <a href='#' title='Bonus to language'>?</a></td><td><input type='number' id='int_0' min='3' max='18' value='10' onchange='document.querySelector("#bonus_"+this.id).innerHTML=calculate_bonus(this.value);'/> Bonus: <span id='bonus_int_0'>0</span></td></tr>
+	<tr><td>WIS <a href='#' title='Bonus to Saving throws against magic'>?</a></td><td><input type='number' id='wis_0' min='3' max='18' value='10' onchange='document.querySelector("#bonus_"+this.id).innerHTML=calculate_bonus(this.value);'/> Bonus: <span id='bonus_wis_0'>0</span></td></tr>
+	<tr><td>DEX <a href='#' title='Bonus to missile fire Hit rolls, Armor Class'>?</a></td><td><input type='number' id='dex_0' min='3' max='18' value='10' onchange='document.querySelector("#bonus_"+this.id).innerHTML=calculate_bonus(this.value);'/> Bonus: <span id='bonus_dex_0'>0</span></td></tr>
+	<tr><td>CON <a href='#' title='Bonus to Hit point rolls'>?</a></td><td><input type='number' id='con_0' min='3' max='18' value='10' onchange='document.querySelector("#bonus_"+this.id).innerHTML=calculate_bonus(this.value);'/> Bonus: <span id='bonus_con_0'>0</span></td></tr>
+	<tr><td>CHA <a href='#' title='Bonus to reactions'>?</a></td><td><input type='number' id='cha_0' min='3' max='18' value='10' onchange='document.querySelector("#bonus_"+this.id).innerHTML=calculate_bonus(this.value);'/> Bonus: <span id='bonus_cha_0'>0</span></td></tr>
+	<tr><th>JSON</th><th><input class="json-file-upload-by-index" target='0' type="file" /><br /><button onclick='exportJSONByIndex("0")'>Export</button></th></tr>
+	</tbody></table>
+	<p><button type="button" id="btnAddCol" onclick='addColumnAvsB()'>Add new enemy</button></p>
+	<p><button onclick='calculate_turns_to_defeat();'>Calculate</button></p>
+
+	<table id='AvsB_result'><tbody>
+	<tr>
+		<td style="padding-bottom: 1em;">
+			<center><b><span id='name_player'>Player</th></b></center>
+			<p>Expected damage: <span id='damage_player'></span></p>
+			<p>Chance to hit: <span id='chance_player'></span></p>
+			<p>Damage inflicted per turn: <span id='damage_per_turn_player'></span></p>
+			<p>Turns to defeat <i><span id='name_enemy'>Enemy 1</span></i>: <span id='result_player'></span></p>
+		</td style="padding-bottom: 1em;">
+		<td>
+			<center><b><span id='name_enemy'>Enemy 1</th></b></center>
+			<p>Expected damage: <span id='damage_enemy'></span></p>
+			<p>Chance to hit: <span id='chance_enemy'></span></p>
+			<p>Damage inflicted per turn: <span id='damage_per_turn_enemy'></span></p>
+			<p>Turns to defeat <i><span id='name_player'>Player</span></i>: <span id='result_enemy'></span></p>
+		</td>
+	</tr>
+	</tbody></table>
+</div>
+
+<div id='attack_on_platoon' class='container'>
+	<h1>How many survivors?</h1>
+	<p>How many survivors after an attack on a platoon of <input type='number' id='units' value='1'/> units?<p>
+	<table><tbody>
+	<tr>
+		<th>Attack</th>
+		<th>Platoon</th>
+	</tr><tr>
+		<td>
+			<table><tbody>
+				<tr><td>Weapon</td><td><input type='number' id='weapon_number_of_dice' value='1'/>d<input type='number' id='weapon_dice_sides' value='6' /></td></tr>
+				<tr><td>TAC0</td><td><input type='number' id='tac0' value='5'/> <label><input type='checkbox' id='always_hit' onchange='document.querySelector("#attack_on_platoon").querySelector("#tac0").disabled=this.checked;' />Always hit</label></td></tr>
+				<tr><th>Ability scores</th><td></td></tr>
+				<tr><td>STR <a href='#' title='Bonus to Hit rolls, damage rolls, opening doors'>?</a></td><td><input type='number' id='str' min='3' max='18' value='10' onchange='document.querySelector("#bonus_"+this.id).innerHTML=calculate_bonus(this.value);'/> Bonus: <span id='bonus_str'>0</span></td></tr>
+			</tbody></table>
+		</td>
+		<td>
+			<table><tbody>
+				<tr><td>Level</td><td><input type='number' id='level' value='5'/></td></tr>
+				<tr><td>AC</td><td><input type='number' id='ac' max='9' value='5'/> chance to evade hits (lower is better)</td></tr>		
+				<tr><td>Saving throw</td><td><input type='number' id='saving_throw' value='10'/> <label><input type='checkbox' id='no_saving_throw' onchange='document.querySelector("#attack_on_platoon").querySelector("#saving_throw").disabled=this.checked;' />No saving throw</label></td></tr>
+				<tr><td>Protection</td><td><input type='number' id='protection' value='0'/></td></tr>
+				<tr><td><b>Ability scores</b></td><td></td></tr>
+				<tr><td>CON <a href='#' title='Bonus to Hit point rolls'>?</a></td><td><input type='number' id='con' min='3' max='18' value='10' onchange='document.querySelector("#bonus_"+this.id).innerHTML=calculate_bonus(this.value);'/> Bonus: <span id='bonus_con'>0</span></td></tr>
+				<tr><td>DEX <a href='#' title='Bonus to missile fire Hit rolls, Armor Class'>?</a></td><td><input type='number' id='dex' min='3' max='18' value='10' onchange='document.querySelector("#bonus_"+this.id).innerHTML=calculate_bonus(this.value);'/> Bonus: <span id='bonus_dex'>0</span></td></tr>
+			</tbody></table>
+		</td>
+	</tr>
+	</tbody></table>
+	<p><input class="json-file-upload" target='attack_on_platoon' type="file" /> <button onclick='exportJSON("attack_on_platoon")'>Export JSON</button><input id='name' placeholder='Name'></input></p>
+	<p><button onclick='calculate_attack_on_platoon();'>Calculate</button></p>
+
+	<p>Damage per unit: <span id='damage'></span></p>
+	<p>Result: <span id='result'></span></p>
+</div>
+
+<script>
+function calculate_probability() {
+	var container = document.querySelector('#probability');
+	var number_of_dice = get_int_in_container(container, 'number_of_dice');
+	var dice_sides = get_int_in_container(container, 'dice_sides');
+	var total = get_int_in_container(container, 'total');
+	var times = get_int_in_container(container, 'times');
+	var result = 0;
+	switch(container.querySelector('#type').value) {
+		case '>=':
+			result = dice_prob_at_least(total, number_of_dice, dice_sides);
+			break;
+		case '<=':
+			result = dice_prob_at_most(total, number_of_dice, dice_sides);
+			break;
+		default:
+			result = dice_prob(total, number_of_dice, dice_sides);
+			break;
+	}
+	container.querySelector('#result').innerHTML = percentage(Math.pow(result, times));
+}
+
+function calculate_expected_damage() {
+	var container = document.querySelector('#expected_damage');
+	var number_of_dice = get_int_in_container(container, 'number_of_dice');
+	var dice_sides = get_int_in_container(container, 'dice_sides');
+	var hits = get_int_in_container(container, 'hits');
+	container.querySelector('#result').innerHTML = expected_result(number_of_dice, dice_sides, hits);
+}
+
+function calculate_bonus(score) {
+	if(score <= 3) {
+		return -3;
+	} else if(score <= 5) {
+		return -2;
+	} else if(score <= 8) {
+		return -1;
+	} else if(score <= 12) {
+		return 0;
+	} else if(score <= 15) {
+		return 1;
+	} else if(score <= 17) {
+		return 2;
+	} else {
+		return 3;
+	}
+}
+
+function calculate_damage_per_turn(weapon_number_of_dice, weapon_dice_sides, str, ac_result, saving_throw, no_saving_throw) {
+	var damage_per_turn = (expected_result(weapon_number_of_dice, weapon_dice_sides) + str) * dice_prob_at_least(ac_result, 1, 20);
+	if(!no_saving_throw) {
+		var saving_throw_result = dice_prob_at_least(saving_throw, 1, 20);
+		damage_per_turn = damage_per_turn * (1 - saving_throw_result) + damage_per_turn / 2 * saving_throw_result;
+	}
+	return damage_per_turn;
+}
+
+function calculate_turns_to_defeat() {
+	var player = new Array();
+	player.name = document.querySelector('#name_0').value;
+	player.weapon_number_of_dice = get_int('weapon_number_of_dice_0');
+	player.weapon_dice_sides = get_int('weapon_dice_sides_0');
+	player.str = calculate_bonus(get_int('str_0'));
+	player.dex = calculate_bonus(get_int('dex_0'));
+	player.tac0 = get_int('tac0_0');
+	
+	player.hp = get_int('hp_0');
+	player.ac = get_int('ac_0');
+	player.protection = get_int('protection_0');
+	player.saving_throw = get_int('saving_throw_0') - player.protection;
+	player.no_saving_throw = document.querySelectorAll('#no_saving_throw_0')[0].checked;
+	player.ac_result = 0;
+	
+	var tr = document.querySelector('#AvsB_result').querySelector('tr');
+	var table = document.querySelector('#AvsB_result').querySelector('tbody');
+	table.innerHTML = '';
+
+	var i = 1;
+	while(i < iter) {
+		var enemy = new Array();
+		enemy.name = document.querySelector('#name_' + i).value;
+		enemy.weapon_number_of_dice = get_int('weapon_number_of_dice_' + i);
+		enemy.weapon_dice_sides = get_int('weapon_dice_sides_' + i);
+		enemy.str = calculate_bonus(get_int('str_' + i));
+		enemy.dex = calculate_bonus(get_int('dex_' + i));
+		enemy.tac0 = get_int('tac0_' + i);
+		
+		enemy.hp = get_int('hp_' + i);
+		enemy.ac = get_int('ac_' + i);
+		enemy.protection = get_int('protection_' + i);
+		enemy.saving_throw = get_int('saving_throw_' + i) - enemy.protection;
+		enemy.no_saving_throw = document.querySelectorAll('#no_saving_throw_' + i)[0].checked;
+		enemy.ac_result = 0;
+
+		if(!document.querySelector('#always_hit_0').checked) {
+			player.ac_result = player.tac0 - enemy.ac + enemy.dex;
+		}
+		if(!document.querySelector('#always_hit_' + i).checked) {
+			enemy.ac_result = enemy.tac0 - player.ac + player.dex;
+		}
+
+		/*var damage_per_turn = (expected_result(weapon_number_of_dice, weapon_dice_sides) + str) * dice_prob_at_least(ac_result, 1, 20);
+		if(!container.querySelector('#no_saving_throw').checked) {
+			var saving_throw_result = dice_prob_at_least(saving_throw, 1, 20);
+			damage_per_turn = damage_per_turn * (1 - saving_throw_result) + damage_per_turn / 2 * saving_throw_result;
+		}*/
+		player.damage_per_turn = calculate_damage_per_turn(player.weapon_number_of_dice, player.weapon_dice_sides, player.str, player.ac_result, enemy.saving_throw, enemy.no_saving_throw);
+		enemy.damage_per_turn = calculate_damage_per_turn(enemy.weapon_number_of_dice, enemy.weapon_dice_sides, enemy.str, enemy.ac_result, player.saving_throw, player.no_saving_throw);
+		
+		[].forEach.call(tr.querySelectorAll('#name_player'), function (elem) {
+			elem.innerHTML = player.name;
+		});
+		tr.querySelector('#damage_player').innerHTML = (expected_result(player.weapon_number_of_dice, player.weapon_dice_sides) + player.str).toFixed(3);
+		tr.querySelector('#chance_player').innerHTML = dice_prob_at_least(player.ac_result, 1, 20).toFixed(3);
+		tr.querySelector('#damage_per_turn_player').innerHTML = player.damage_per_turn.toFixed(3);
+		tr.querySelector('#result_player').innerHTML = (enemy.hp / player.damage_per_turn).toFixed(3);
+		[].forEach.call(tr.querySelectorAll('#name_enemy'), function (elem) {
+			elem.innerHTML = enemy.name;
+		});
+		tr.querySelector('#damage_enemy').innerHTML = (expected_result(enemy.weapon_number_of_dice, enemy.weapon_dice_sides) + enemy.str).toFixed(3);
+		tr.querySelector('#chance_enemy').innerHTML = dice_prob_at_least(enemy.ac_result, 1, 20).toFixed(3);
+		tr.querySelector('#damage_per_turn_enemy').innerHTML = enemy.damage_per_turn.toFixed(3);
+		tr.querySelector('#result_enemy').innerHTML = (player.hp / enemy.damage_per_turn).toFixed(3);
+		table.innerHTML += tr.outerHTML;
+		i++;
+	}
+}
+
+function calculate_attack_on_platoon() {
+	var container = document.querySelector('#attack_on_platoon');
+	var units = get_int_in_container(container, 'units');
+	
+	var weapon_number_of_dice = get_int_in_container(container, 'weapon_number_of_dice');
+	var weapon_dice_sides = get_int_in_container(container, 'weapon_dice_sides');
+	var str = calculate_bonus(get_int_in_container(container, 'str'));
+	var tac0 = get_int_in_container(container, 'tac0');
+	
+	var level = get_int_in_container(container, 'level');
+	var con = calculate_bonus(get_int_in_container(container, 'con'));
+	var dex = calculate_bonus(get_int_in_container(container, 'dex'));
+	var ac = get_int_in_container(container, 'ac');
+	var protection = get_int_in_container(container, 'protection');
+	var saving_throw = get_int_in_container(container, 'saving_throw') - protection;
+	var ac_result = 0;
+	if(!container.querySelector('#always_hit').checked) {
+		ac_result = tac0 - ac + dex;
+	}
+	
+	var damage_per_unit = (expected_result(weapon_number_of_dice, weapon_dice_sides) + str) * dice_prob_at_least(ac_result, 1, 20);
+	var saving_throw_result = dice_prob_at_least(saving_throw, 1, 20);
+	damage_per_unit = damage_per_unit * (1 - saving_throw_result) + damage_per_unit / 2 * saving_throw_result;
+	container.querySelector('#damage').innerHTML = damage_per_unit.toFixed(3);
+	var prob_at_least = dice_prob_at_least(damage_per_unit - con * level, level, 8);
+	container.querySelector('#result').innerHTML = (units * prob_at_least) + ' survived units (' + percentage(prob_at_least) + ')';
+}
+
+function get_int(id) {
+	//console.log(id + ' => ' + document.querySelector('#' + id).value);
+	return parseInt(document.querySelector('#' + id).value);
+}
+function get_int_in_container(container, id) {
+	//console.log(id);// + ' => ' + container.querySelectorAll('#' + id)[0].value);
+	return parseInt(container.querySelector('#' + id).value);
+}
+
+function percentage(num, decimals=2) {
+	return (num*100).toFixed(decimals) + '%';
+}
+
+// Calculates the expected damage for *n* dice with *s* sides after *h* hits.
+function expected_result(n, s, h=1) {
+	return n * (s / 2 + 0.5) * h;
+}
+
+var factorial_cache = [1, 1];
+function factorial(n) {
+	if (n < factorial_cache.length) {
+		return factorial_cache[n];
+	}
+	var i = factorial_cache.length;
+	var result = factorial_cache[i-1];
+	for (i; i <= n; i++) {
+		result *= i;
+		factorial_cache[i] = result;
+	}
+	return result;
+}
+
+// Calculates the probability for obtaining a given total *p* using *n* dice with *s* sides.
+// The function implements the formula described here: http://mathworld.wolfram.com/Dice.html
+// and implemented here for Matlab: https://github.com/carlosvega/DiceProbabilities
+function dice_prob(p, n, s=6) {
+	var k_max = Math.floor((p - n) / s);
+	var sum = 0;
+	for (var k = 0; k <= k_max; k++) {
+		var val1 = Math.pow(-1, k);
+		var val2 = comb_sans_repeat(n, k);
+		var val3 = comb_sans_repeat(p - (s * k) - 1, n - 1);
+		sum = sum + (val1 * val2 * val3);
+	}
+	return sum / Math.pow(s, n);
+}
+function comb_sans_repeat(n, k) {
+	return factorial(n) / (factorial(k) * factorial(n - k));
+}
+
+function dice_prob_at_least(p, n, s=6) {
+	var sum = 1;
+	for(var i = 0; i < p; i++) {
+		sum -= dice_prob(i, n, s);
+	}
+	return sum;
+}
+
+function dice_prob_at_most(p, n, s=6) {
+	var sum = 0;
+	for(var i = 0; i <= p; i++) {
+		sum += dice_prob(i, n, s);
+	}
+	return sum;
+}
+
+var myform = document.querySelector('#AvsB');
+var iter = 1;
+function addColumnAvsB() {
+	var values = new Array();
+	[].forEach.call(myform.querySelectorAll('input'), function (elem) {
+		if (elem.type == 'checkbox') {
+			values[elem.id] = elem.checked;
+		} else if(elem.id != '') {
+			values[elem.id] = elem.value;
+		}
+	});
+
+	var first = true;
+	[].forEach.call(myform.querySelectorAll('tr'), function(trow) {
+		var tag = 'td';
+		var td = trow.querySelectorAll(tag)[1];
+		if(td == null) {
+			tag = 'th';
+			td = trow.querySelectorAll(tag)[1];
+		}
+		trow.innerHTML += '<' + tag + '>' + td.innerHTML + '</' + tag + '>';
+		
+		var td = trow.querySelectorAll(tag);
+		td = td[td.length-1];
+		if(first) {
+			td.innerHTML = iter + '. ' + td.innerHTML;
+		}
+		[].forEach.call(td.querySelectorAll('span'), function(input) {
+			var id = input.id;
+			input.id = id.substring(0, id.lastIndexOf('_')) + '_' + iter;
+		});
+		[].forEach.call(td.querySelectorAll('input'), function(input) {
+			if(first) {
+				input.value = 'Enemy ' + iter;
+				first = false;
+			}
+			if(input.attributes.target != null) {
+				input.setAttribute('target', iter);
+			} else {
+				var id = input.id;
+				input.id = id.substring(0, id.lastIndexOf('_')) + '_' + iter;
+			}
+		});
+		var button = td.querySelector('button');
+		if(button != null) {
+			button.setAttribute('onclick', 'exportJSONByIndex("' + iter + '")');
+			button.addEventListener('change', onChangeByIndex)
+		}
+	});
+
+	// Restore values in form.
+	Object.keys(values).forEach(function (key) {
+		setValue(document.querySelectorAll('#' + key)[0], values[key]);
+	});
+	setJsonListeners();
+	iter += 1;
+}
+addColumnAvsB();
+
+/*var number_of_dice = 1;
+var dice_sides = 6;
+for (var k = 1; k <= number_of_dice * dice_sides; k++) {
+	document.getcontainerentById('result').innerHTML += k + ' ' + (dice_prob(k, number_of_dice, dice_sides) * 100).toFixed(2) + '%<br/>';
+}
+document.getcontainerentById('result').innerHTML += '<br/>At least:<br/>';
+for (var k = 1; k <= number_of_dice * dice_sides; k++) {
+	document.getcontainerentById('result').innerHTML += k + ' ' + (dice_prob_at_least(k, number_of_dice, dice_sides) * 100).toFixed(2) + '%<br/>';
+}
+document.getcontainerentById('result').innerHTML += '<br/>At most<br/>';
+for (var k = 1; k <= number_of_dice * dice_sides; k++) {
+	document.getcontainerentById('result').innerHTML += k + ' ' + (dice_prob_at_most(k, number_of_dice, dice_sides) * 100).toFixed(2) + '%<br/>';
+}*/
+
+/**
+ * Converts the given data structure to a JSON string.
+ * Argument: arr - The data structure that must be converted to JSON
+ * Example: var json_string = array2json(['e', {pluribus: 'unum'}]);
+ * 			var json = array2json({"success":"Sweet","failure":false,"empty_array":[],"numbers":[1,2,3],"info":{"name":"Binny","site":"http:\/\/www.openjs.com\/"}});
+ * http://www.openjs.com/scripts/data/json_encode.php
+ */
+function array2json(arr) {
+    var parts = [];
+    var is_list = false; //(Object.prototype.toString.apply(arr) === '[object Array]');
+
+    for(var key in arr) {
+    	var value = arr[key];
+        if(typeof value == "object") { //Custom handling for arrays
+            if(is_list) parts.push(array2json(value)); /* :RECURSION: */
+            else parts.push('"' + key + '":' + array2json(value)); /* :RECURSION: */
+            //else parts[key] = array2json(value); /* :RECURSION: */
+            
+        } else {
+            var str = "";
+            if(!is_list) str = '"' + key + '":';
+
+            //Custom handling for multiple data types
+            if(typeof value == "number") str += value; //Numbers
+            else if(value === false) str += 'false'; //The booleans
+            else if(value === true) str += 'true';
+            else str += '"' + value + '"'; //All other things
+            // :TODO: Is there any more datatype we should be in the lookout for? (Functions?)
+
+            parts.push(str);
+        }
+    }
+    var json = parts.join(",");
+    
+    if(is_list) return '[' + json + ']';//Return numerical JSON
+    return '{' + json + '}';//Return associative JSON
+}
+
+// Export input values to a JSON file.
+function exportJSON(name) {
+	obj = document.querySelector('#' + name);
+	var values = new Array();
+	[].forEach.call(obj.querySelectorAll('input'), function (elem) {
+		console.log(elem.id + " => " + elem.value);
+		if (elem.type == 'checkbox') {
+			values[elem.id] = elem.checked;
+		} else if(elem.id != '') {
+			values[elem.id] = elem.value;
+		}
+	});
+	download(values['name'] + ".json", array2json(values));
+}
+function exportJSONByIndex(index) {
+	var values = new Array();
+	[].forEach.call(document.querySelectorAll('input'), function (elem) {
+		if(elem.id.endsWith('_' + index)) {
+			var id = elem.id;
+			id = id.substring(0, id.lastIndexOf('_'));
+			console.log(elem.id + " => " + elem.value);
+			if (elem.type == 'checkbox') {
+				values[id] = elem.checked;
+			} else if(id != '') {
+				values[id] = elem.value;
+			}
+		}
+	});
+	download(values['name'] + ".json", array2json(values));
+}
+
+function download(filename, text) {
+	var element = document.createElement('a');
+	element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+	element.setAttribute('download', filename);
+	element.style.display = 'none';
+	document.body.appendChild(element);
+	element.click();
+	document.body.removeChild(element);
+}
+
+// Set the value for an element.
+function setValue(elem, value) {
+	if (elem) {
+		if (elem.type && elem.type == 'checkbox') {
+			if (value) {
+				elem.checked = true;
+			} else {
+				elem.checked = false;
+			}
+		} else {
+			elem.value = value;
+		}
+		elem.dispatchEvent(new Event('change'));
+	}
+}
+
+// JSON upload handler.
+function onChange(event) {
+	//console.log(event.target);
+	var target = event.target.attributes.target.value;
+	var file = event.target.files[0];
+	var reader = new FileReader();
+	reader.onload = (function(f) {
+		return function(event) {
+			onReaderLoad(event, target);
+		};
+	})(file);
+	reader.readAsText(event.target.files[0]);
+}
+function onChangeByIndex(event) {
+	//console.log(event.target);
+	var target = event.target.attributes.target.value;
+	var file = event.target.files[0];
+	var reader = new FileReader();
+	reader.onload = (function(f) {
+		return function(event) {
+			onReaderLoadByIndex(event, target);
+		};
+	})(file);
+	reader.readAsText(event.target.files[0]);
+}
+
+function onReaderLoad(event, target) {
+	console.log(event);
+	var obj = JSON.parse(event.target.result);
+	var parent = document.querySelector('#' + target);
+	Object.keys(obj).forEach(function (key) {
+		setValue(parent.querySelector('#' + key), obj[key]);
+	});
+}
+function onReaderLoadByIndex(event, target) {
+	console.log(event);
+	var obj = JSON.parse(event.target.result);
+	Object.keys(obj).forEach(function (key) {
+		setValue(document.querySelector('#' + key + '_' + target), obj[key]);
+	});
+}
+
+function setJsonListeners() {
+	[].forEach.call(document.querySelectorAll('.json-file-upload'), function (elem) {
+		elem.addEventListener('change', onChange);
+	});
+	[].forEach.call(document.querySelectorAll('.json-file-upload-by-index'), function (elem) {
+		elem.addEventListener('change', onChangeByIndex);
+	});
+}
+setJsonListeners();
+</script>
+</body>
+</html>
