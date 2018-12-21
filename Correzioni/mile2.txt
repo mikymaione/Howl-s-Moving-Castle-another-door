@@ -19,20 +19,20 @@ Miky
 
 Francesco
 [X] se i personaggi evolvono usare 1 diagramma con frecce
-[ ] nel diagramma di howl, sophie evolve
-[ ] orphan child se evolve evolvere nel diagramma
-[ ] calcifer paragrafo 2, evolve in armatura quindi nel diagramma devi mettere evoluzione
-[ ] layton unificare i due diagrammi con freccia evoluzione
+[Z] nel diagramma di howl, sophie evolve
+[Z] orphan child se evolve evolvere nel diagramma
+[Z] calcifer paragrafo 2, evolve in armatura quindi nel diagramma devi mettere evoluzione
+[Z] layton unificare i due diagrammi con freccia evoluzione
 
 Riccardo
 [X] goal outline sintetici
-[ ] howl non si tinge più i capelli
-[ ] "howl recals" mettere in main story
-[ ] orphan child, secondo paragrafo chiarire e vedere rapporti con altri personaggi
-[ ] ben rivedere storia
-[ ] markl ampliare comportamento, evolve nella storia?
-[ ] strega informazioni ridondanti e la parte di heen mettere in heen
-[ ] main story aggiungi parte del furto di calcifer
-[ ] ma il giocatore quando scopre la parte del passato di howl? (fai che calcifer introduce questa storia e la racconta, e che sophie ha cambiato howl in un uomo miglire)
-[ ] main story, quando succede carla? coreggi inglese
+[X] howl non si tinge più i capelli
+[X] "howl recals" mettere in main story
+[X] orphan child, secondo paragrafo chiarire e vedere rapporti con altri personaggi
+[X] ben rivedere storia
+[X] markl ampliare comportamento, evolve nella storia?
+[X] strega informazioni ridondanti e la parte di heen mettere in heen
+[X] main story aggiungi parte del furto di calcifer
+[X] ma il giocatore quando scopre la parte del passato di howl? (fai che calcifer introduce questa storia e la racconta, e che sophie ha cambiato howl in un uomo miglire)
+[X] main story, quando succede carla? coreggi inglese
 [X] quando il team entra si deve presentare
