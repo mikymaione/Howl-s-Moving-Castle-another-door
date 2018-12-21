@@ -9,7 +9,7 @@ Miky
 [ ] suoni specifici oggetti
 [ ] suoni giocatori
 [ ] suoni nelle mappe
-[ ] misure grotte
+[X] misure grotte
 [X] tetti percorso shortest path in rosso
 [X] tetti percorso che voglio che il giocatore faccia, dare un motivo per esplorare il resto dei tetti
 
