@@ -1,10 +1,10 @@
-[ ] 10 civili nei 3 quadranti
-[ ] 4 soldati nei 3 quadranti
+[X] 10 civili nei 3 quadranti
+[X] 4 soldati nei 3 quadranti
 [ ] 2 soldati nella taverna
 [ ] 3 mud spammer nella taverna
 [ ] nel quadrante 4 delle sewer 4 soldati
 [ ] nel quadrante 5 delle sewer 6 topi
 [ ] nelle prison al posto di 2 soldati 2 mudspammer
 
-[ ] tempi musicali censisci
+[X] tempi musicali censisci
 [ ] diagramma eccitazione livello
