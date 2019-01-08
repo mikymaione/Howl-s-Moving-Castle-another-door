@@ -7,4 +7,5 @@
 [ ] nelle prison al posto di 2 soldati 2 mudspammer
 
 [X] tempi musicali censisci
-[ ] diagramma eccitazione livello
+[X] diagramma eccitazione livello
+[ ] descrizione diagramma eccitazione livello
