@@ -9,3 +9,7 @@
 [X] tempi musicali censisci
 [X] diagramma eccitazione livello
 [ ] descrizione diagramma eccitazione livello
+[ ] Correggi didascalia guild2 aggiungendo il libro
+[ ] Correggi numero oggetti guild2-> il oggetto numero 4 deve diventare 5 e oggetto 5 deve diventare 6
+[ ] Correggi ampolla su tavolo centrale guild1-> deve essere rossa
+[ ] Howl-s-Moving-Castle-another-door\Resources\Levels\Radme\Cal\Blueprints\Market\Guild\puzzles\6.png dividi i due oggetti->bicchiere e ampolla
