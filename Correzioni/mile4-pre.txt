@@ -18,6 +18,8 @@
 [ ] guild floor 0 metti 7 al posto di 6
 [ ] tavern floor 0 e 1 e non 1 e 2
 [ ] tavern metti ben fuori finestra
+[X] Aggiusta event flow chart castello
+[] Finisci di aggiungere luci
 
 [X] tempi musicali censisci
 [X] diagramma eccitazione livello
