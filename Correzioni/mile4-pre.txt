@@ -13,8 +13,8 @@ Mich
 [X] legende colori paths
 [X] guild floor 0 metti 7 al posto di 6
 [X] tavern floor 0 e 1 e non 1 e 2
-[X] castle legenda sotto
-[ ] market manca 6 nella legenda
+[N] castle legenda sotto
+[X] market manca 6 nella legenda
 [ ] armory al posto delle cassaforte metti rewards
 [ ] aggiungi icona shop e inseriscilo nella legenda IN TUTTI I SETTORI DELLA CITTA'
 [ ] porto aggiungi remo in barca 5
