@@ -16,7 +16,7 @@ Mich
 [N] castle legenda sotto
 [X] market manca 6 nella legenda
 [X] porto aggiungi remo in barca 5
-[ ] armory al posto delle cassaforte metti rewards
+[X] armory al posto delle cassaforte metti rewards
 [ ] aggiungi icona shop e inseriscilo nella legenda IN TUTTI I SETTORI DELLA CITTA'
 
 Fra
