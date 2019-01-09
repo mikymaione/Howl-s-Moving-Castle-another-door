@@ -1,26 +1,5 @@
 [X] 10 civili nei 3 quadranti
 [X] 4 soldati nei 3 quadranti
-[ ] 2 soldati nella taverna
-[ ] 3 mud spammer nella taverna
-[ ] nel quadrante 4 delle sewer 4 soldati
-[ ] nel quadrante 5 delle sewer 6 topi
-[ ] nelle prison al posto di 2 soldati 2 mudspammer
-[ ] castle legenda sotto
-[ ] prison aggiungi leva e grata
-[ ] porto aggiungi remo in barca 5
-[ ] legende colori paths
-[ ] aggiungi icona shop
-[ ] market manca 6
-[ ] market mancano path rewards
-[ ] barrack chiave
-[ ] armory al posto delle cassaforte metti rewards
-[ ] armory metti armi
-[ ] guild floor 0 metti 7 al posto di 6
-[ ] tavern floor 0 e 1 e non 1 e 2
-[ ] tavern metti ben fuori finestra
-[X] Aggiusta event flow chart castello
-[] Finisci di aggiungere luci
-
 [X] tempi musicali censisci
 [X] diagramma eccitazione livello
 [X] descrizione diagramma eccitazione livello
@@ -28,3 +7,34 @@
 [X] Correggi numero oggetti guild2-> il oggetto numero 4 deve diventare 5 e oggetto 5 deve diventare 6
 [X] Correggi ampolla su tavolo centrale guild1-> deve essere rossa
 [X] Howl-s-Moving-Castle-another-door\Resources\Levels\Radme\Cal\Blueprints\Market\Guild\puzzles\6.png dividi i due oggetti->bicchiere e ampolla
+[X] Aggiusta event flow chart castello
+
+Mich
+[ ] legende colori paths
+[ ] guild floor 0 metti 7 al posto di 6
+[ ] tavern floor 0 e 1 e non 1 e 2
+[ ] castle legenda sotto
+[ ] market manca 6 nella legenda
+[ ] armory al posto delle cassaforte metti rewards
+[ ] aggiungi icona shop e inseriscilo nella legenda IN TUTTI I SETTORI DELLA CITTA'
+[ ] porto aggiungi remo in barca 5
+
+Fra
+[ ] 2 soldati nella taverna
+[ ] 3 mud spammer nella taverna
+[ ] nel quadrante 4 delle sewer 4 soldati
+[ ] nel quadrante 5 delle sewer 6 topi
+[ ] nelle prison al posto di 2 soldati 2 mudspammer
+[ ] Finisci di aggiungere luci
+[ ] prison aggiungi leva e grata
+[ ] barrack chiave
+[ ] armory metti armi
+[ ] market mancano path rewards
+
+
+
+
+
+
+[ ] tavern metti ben fuori finestra
+
