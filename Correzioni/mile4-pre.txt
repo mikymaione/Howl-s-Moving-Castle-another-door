@@ -5,6 +5,19 @@
 [ ] nel quadrante 4 delle sewer 4 soldati
 [ ] nel quadrante 5 delle sewer 6 topi
 [ ] nelle prison al posto di 2 soldati 2 mudspammer
+[ ] castle legenda sotto
+[ ] prison aggiungi leva e grata
+[ ] porto aggiungi remo in barca 5
+[ ] legende colori paths
+[ ] aggiungi icona shop
+[ ] market manca 6
+[ ] market mancano path rewards
+[ ] barrack chiave
+[ ] armory al posto delle cassaforte metti rewards
+[ ] armory metti armi
+[ ] guild floor 0 metti 7 al posto di 6
+[ ] tavern floor 0 e 1 e non 1 e 2
+[ ] tavern metti ben fuori finestra
 
 [X] tempi musicali censisci
 [X] diagramma eccitazione livello
