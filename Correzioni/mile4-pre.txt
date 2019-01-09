@@ -8,7 +8,7 @@
 
 [X] tempi musicali censisci
 [X] diagramma eccitazione livello
-[ ] descrizione diagramma eccitazione livello
+[X] descrizione diagramma eccitazione livello
 [X] Correggi didascalia guild2 aggiungendo il libro
 [X] Correggi numero oggetti guild2-> il oggetto numero 4 deve diventare 5 e oggetto 5 deve diventare 6
 [X] Correggi ampolla su tavolo centrale guild1-> deve essere rossa
