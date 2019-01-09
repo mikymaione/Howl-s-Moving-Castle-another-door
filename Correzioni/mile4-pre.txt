@@ -17,7 +17,7 @@ Mich
 [X] market manca 6 nella legenda
 [X] porto aggiungi remo in barca 5
 [X] armory al posto delle cassaforte metti rewards
-[ ] aggiungi icona shop e inseriscilo nella legenda IN TUTTI I SETTORI DELLA CITTA'
+[X] aggiungi icona shop e inseriscilo nella legenda IN TUTTI I SETTORI DELLA CITTÀ
 
 Fra
 [ ] 2 soldati nella taverna
