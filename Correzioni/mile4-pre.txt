@@ -15,9 +15,9 @@ Mich
 [X] tavern floor 0 e 1 e non 1 e 2
 [N] castle legenda sotto
 [X] market manca 6 nella legenda
+[X] porto aggiungi remo in barca 5
 [ ] armory al posto delle cassaforte metti rewards
 [ ] aggiungi icona shop e inseriscilo nella legenda IN TUTTI I SETTORI DELLA CITTA'
-[ ] porto aggiungi remo in barca 5
 
 Fra
 [ ] 2 soldati nella taverna
