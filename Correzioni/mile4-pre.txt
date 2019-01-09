@@ -1,4 +1,4 @@
-[X] 10 civili nei 3 quadranti
+﻿[X] 10 civili nei 3 quadranti
 [X] 4 soldati nei 3 quadranti
 [X] tempi musicali censisci
 [X] diagramma eccitazione livello
@@ -20,16 +20,16 @@ Mich
 [X] aggiungi icona shop e inseriscilo nella legenda IN TUTTI I SETTORI DELLA CITTÀ
 
 Fra
-[ ] 2 soldati nella taverna
-[ ] 3 mud spammer nella taverna
-[ ] nel quadrante 4 delle sewer 4 soldati
-[ ] nel quadrante 5 delle sewer 6 topi
-[ ] nelle prison al posto di 2 soldati 2 mudspammer
+[X] 2 soldati nella taverna
+[X] 3 mud spammer nella taverna
+[X] nel quadrante 4 delle sewer 4 soldati
+[X] nel quadrante 5 delle sewer 6 topi
+[X] nelle prison al posto di 2 soldati 2 mudspammer
 [ ] Finisci di aggiungere luci
 [ ] prison aggiungi leva e grata
-[ ] barrack chiave
+[X] barrack chiave
 [ ] armory metti armi
-[ ] market mancano path rewards
+[X] market mancano path rewards
 
 
 
