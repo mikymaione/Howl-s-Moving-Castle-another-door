@@ -1,4 +1,4 @@
-Miky
+﻿Miky
 [X] numerare stanze interne con legenda
 [X] fuga sui tetti
 [X] numerare mappa grande con legenda
@@ -23,9 +23,9 @@ Francesco
 [Z] orphan child se evolve evolvere nel diagramma
 [Z] calcifer paragrafo 2, evolve in armatura quindi nel diagramma devi mettere evoluzione
 [Z] layton unificare i due diagrammi con freccia evoluzione
+[X] goal outline sintetici
 
 Riccardo
-[X] goal outline sintetici
 [X] howl non si tinge più i capelli
 [X] "howl recals" mettere in main story
 [X] orphan child, secondo paragrafo chiarire e vedere rapporti con altri personaggi
