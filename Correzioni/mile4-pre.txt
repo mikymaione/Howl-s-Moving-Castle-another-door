@@ -18,6 +18,8 @@ Mich
 [X] porto aggiungi remo in barca 5
 [X] armory al posto delle cassaforte metti rewards
 [X] aggiungi icona shop e inseriscilo nella legenda IN TUTTI I SETTORI DELLA CITTÀ
+[ ] riordina le mappe in base all'event diagram
+[ ] fai modifiche a parte tower & trees
 
 Fra
 [X] 2 soldati nella taverna
