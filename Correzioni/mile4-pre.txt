@@ -26,9 +26,9 @@ Fra
 [X] nel quadrante 5 delle sewer 6 topi
 [X] nelle prison al posto di 2 soldati 2 mudspammer
 [ ] Finisci di aggiungere luci
-[ ] prison aggiungi leva e grata
+[X] prison aggiungi leva e grata
 [X] barrack chiave
-[ ] armory metti armi
+[X] armory metti armi
 [X] market mancano path rewards
 
 
