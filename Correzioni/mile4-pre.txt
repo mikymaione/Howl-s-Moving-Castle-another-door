@@ -1,8 +1,8 @@
 ﻿Miky:
 [ ] 4 puzzle antichi aggiungere al documento
 [ ] nelle fogne metti una musica poco concitata prima degli scontri e subito dopo una veloce
-[ ] modifiche alla parte tower & trees della mappa the secret entrance 2? Secret entrance 2 la devi rinominare East citadel e devi disegnare qualcosa che ricordi lo start della tower dove sta scritto tower e trees
-[ ] tavern metti ben fuori finestra
+[X] modifiche alla parte tower & trees della mappa the secret entrance 2? Secret entrance 2 la devi rinominare East citadel e devi disegnare qualcosa che ricordi lo start della tower dove sta scritto tower e trees
+[X] tavern metti ben fuori finestra
 
 Francesco:
 [ ] Finire di aggiungere luci
