@@ -1,4 +1,14 @@
-﻿[X] 10 civili nei 3 quadranti
+﻿Miky:
+[ ] 4 puzzle antichi aggiungere al documento
+[ ] nelle fogne metti una musica poco concitata prima degli scontri e subito dopo una veloce
+[ ] modifiche alla parte tower & trees della mappa the secret entrance 2? Secret entrance 2 la devi rinominare East citadel e devi disegnare qualcosa che ricordi lo start della tower dove sta scritto tower e trees
+[ ] tavern metti ben fuori finestra
+
+Francesco:
+[ ] Finire di aggiungere luci
+
+Fatto:
+[X] 10 civili nei 3 quadranti
 [X] 4 soldati nei 3 quadranti
 [X] tempi musicali censisci
 [X] diagramma eccitazione livello
@@ -8,8 +18,6 @@
 [X] Correggi ampolla su tavolo centrale guild1-> deve essere rossa
 [X] Howl-s-Moving-Castle-another-door\Resources\Levels\Radme\Cal\Blueprints\Market\Guild\puzzles\6.png dividi i due oggetti->bicchiere e ampolla
 [X] Aggiusta event flow chart castello
-
-Mich
 [X] legende colori paths
 [X] guild floor 0 metti 7 al posto di 6
 [X] tavern floor 0 e 1 e non 1 e 2
@@ -18,25 +26,16 @@ Mich
 [X] porto aggiungi remo in barca 5
 [X] armory al posto delle cassaforte metti rewards
 [X] aggiungi icona shop e inseriscilo nella legenda IN TUTTI I SETTORI DELLA CITTÀ
-[ ] riordina le mappe in base all'event diagram
-[ ] fai modifiche a parte tower & trees
-
-Fra
+[X] riordina le mappe in base all'event diagram
+[X] caricare fights outcome in doc si chiamano "scontri mappe livello 6" credo
+[X] riordinare le mappe in base all'event diagram
+[X] Spostare sound design in un capitolo apposito prima del capitolo delle mappe
 [X] 2 soldati nella taverna
 [X] 3 mud spammer nella taverna
 [X] nel quadrante 4 delle sewer 4 soldati
 [X] nel quadrante 5 delle sewer 6 topi
 [X] nelle prison al posto di 2 soldati 2 mudspammer
-[ ] Finisci di aggiungere luci
 [X] prison aggiungi leva e grata
 [X] barrack chiave
 [X] armory metti armi
 [X] market mancano path rewards
-
-
-
-
-
-
-[ ] tavern metti ben fuori finestra
-
