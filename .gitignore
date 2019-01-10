@@ -3,6 +3,6 @@
 ### LibreOffice ###
 # LibreOffice locks
 .~lock.*#
-
+Documentation/*.pdf
 
 # End of https://www.gitignore.io/api/libreoffice
