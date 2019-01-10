@@ -4,6 +4,15 @@
 [X] modifiche alla parte tower & trees della mappa the secret entrance 2? Secret entrance 2 la devi rinominare East citadel e devi disegnare qualcosa che ricordi lo start della tower dove sta scritto tower e trees
 [X] tavern metti ben fuori finestra
 
+
+The city is lit by various torches placed along the streets spreading radial light that excludes the possibility of having dark corners.
+The light used in the torches is RGBA(255, 238, 153, 0.6).
+While the places of the missions have different colors:
+Guild: RGBA(100, 140, 255, 0.6)
+Barrack RGBA(255, 215, 150, 0.6)
+Port RGBA(255, 180, 150, 0.6)
+Fountain RGBA(200, 255, 150, 0.6)
+
 Francesco:
 [ ] Finire di aggiungere luci
 
