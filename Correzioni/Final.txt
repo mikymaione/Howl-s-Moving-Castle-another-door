@@ -1,5 +1,6 @@
 Mich
 Aggiustare le legende delle mappe
+Aggiustare bene il doc (spazi ecc)
 
 Fra
 Mettere gli exploration reward nelle varie mappe
@@ -7,3 +8,4 @@ Dobbiamo scegliere simbolo per reward personaggi e reward esplorativi
 
 Richi
 Aggiustare un po l'inglese
+Aggiustare script e storia
