@@ -1,6 +1,7 @@
 Mich
 [ ] Aggiustare le legende delle mappe
 [ ] Aggiustare bene il doc (spazi ecc)
+[ ] Metti immagini exploration rewards nel documento e ingrandisci immagini alla fine dei vari luoghi
  
 Fra
 [ ] Mettere gli exploration reward nelle varie mappe
