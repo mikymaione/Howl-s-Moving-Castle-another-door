@@ -1,9 +1,11 @@
 Mich
+[ ] nelle fogne metti una musica poco concitata prima degli scontri e subito dopo una veloce
 [ ] Aggiustare le legende delle mappe
 [ ] Aggiustare bene il doc (spazi ecc)
 [ ] Metti immagini exploration rewards nel documento e ingrandisci immagini alla fine dei vari luoghi
- 
+
 Fra
+[ ] correggere parte di gameplay nel file Concept.odt
 [ ] Mettere gli exploration reward nelle varie mappe
 [ ] Dobbiamo scegliere simbolo per reward personaggi e reward esplorativi
 
