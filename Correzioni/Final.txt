@@ -7,7 +7,7 @@ Mich
 Fra
 [X] correggere parte di gameplay nel file Concept.odt
 [ ] Mettere gli exploration reward nelle varie mappe
-[ ] Dobbiamo scegliere simbolo per reward personaggi e reward esplorativi
+[X] Dobbiamo scegliere simbolo per reward personaggi e reward esplorativi
 
 Richi
 [X] Avg e duration dei puzzle
