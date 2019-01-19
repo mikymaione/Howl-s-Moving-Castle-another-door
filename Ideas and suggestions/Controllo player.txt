@@ -1,0 +1,13 @@
+D-Pad:
+Left and right arrow the character rotate on its Y-axis.
+Up and down arrow the character advances or recedes.
+Face buttons:
+Bottom button the character jump.
+Right button the character attack.
+Left button the character use the selected item (if available).
+Up button the character use the selected magic (if available).
+Shoulder buttons:
+Top-right: next magic.
+Top-left: previous magic.
+Bottom-right: next item.
+Bottom-left: previous item.
