@@ -2,16 +2,22 @@ Legende: 0.7 + 4.91 = 5.61
 
 Mich
 [X] Aggiustare bene il doc (spazi ecc)
-[ ] nelle fogne metti una musica poco concitata prima degli scontri e subito dopo una veloce
+[X] nelle fogne metti una musica poco concitata prima degli scontri e subito dopo una veloce
 [ ] Aggiustare le legende delle mappe
-[ ] Metti immagini exploration rewards nel documento e ingrandisci immagini alla fine dei vari luoghi
+[ ] ingrandisci immagini alla fine dei vari luoghi
+[ ] Formattare correttamente il documento
+[ ] Riordinare le aprti del documento secondo Level e Game Design
 
 Fra
 [X] correggere parte di gameplay nel file Concept.odt
 [X] Mettere gli exploration reward nelle varie mappe
 [X] Dobbiamo scegliere simbolo per reward personaggi e reward esplorativi
+[X] Mettere check point e trovare le immagini
+[ ] Inserire percorsi in taverna e castello
+I checkpoint sono 3 perchè le mappe sono piccole e quindi si possono attraversare velocemente,
+prevedendo anche un po di backtracking nelle situazioni in cui è stato calcolato che il giocatore possa essere sconfitto.
 
 Richi
 [X] Avg e duration dei puzzle
-[ ] Aggiustare un po l'inglese
-[ ] Aggiustare script e storia
+[X] Aggiustare un po l'inglese
+[X] Aggiustare script e storia
