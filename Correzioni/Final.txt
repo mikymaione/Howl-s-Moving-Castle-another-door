@@ -3,10 +3,10 @@ Legende: 0.7 + 4.91 = 5.61
 Mich
 [X] Aggiustare bene il doc (spazi ecc)
 [X] nelle fogne metti una musica poco concitata prima degli scontri e subito dopo una veloce
-[ ] Aggiustare le legende delle mappe
-[ ] ingrandisci immagini alla fine dei vari luoghi
-[ ] Formattare correttamente il documento
-[ ] Riordinare le aprti del documento secondo Level e Game Design
+[X] Aggiustare le legende delle mappe
+[?] ingrandisci immagini alla fine dei vari luoghi
+[X] Formattare correttamente il documento
+[X] Riordinare le aprti del documento secondo Level e Game Design
 
 Fra
 [X] correggere parte di gameplay nel file Concept.odt
