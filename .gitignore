@@ -6,5 +6,6 @@
 Documentation/*.pdf
 *.zip
 *.7z
+*.exe
 
 # End of https://www.gitignore.io/api/libreoffice
