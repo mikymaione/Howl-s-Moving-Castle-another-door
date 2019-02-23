@@ -1,0 +1,90 @@
+HP = Health Point
+MP = Mana(=Magic) Point
+AC = Armor Class
+TAC0 = To-hit Armor Class 0
+
+d6 = dice 6 faces
+d8 = dice 8 faces
+
+1d6 = throw 1 time a d6
+3d6 = throw 3 time a d6
+
+AC:
+0: max difficulty to hit
+15: minimum difficulty to hit
+
+
+Example
+Elf
+– longsword (1d8)
+– STR +1
+– AC 3
+– HP 12
+– TAC0 10
+
+longsword (1d8):
+the probability to damage with this weapon is:
+(1+2+3+4+5+6+7+8) ÷ 8 = 4.5 Damage
+STR +1 => 4.5 + 1 = 5.5 Damage
+
+TAC0 10:
+TAC0 - Probability
+0 - 10
+1 - 9
+2 - 8
+3 - 7
+4 - 6
+5 - 5
+6 - 4
+7 - 3
+8 - 2 <- Golem
+9 - 1
+10 - 0
+
+To hit you need to throw 1d20 so:
+8 - 2 <- Golem
+1 + 20 - 2 = 19 
+
+Probability to hit with TAC0 10 an AC 8 (throwing a 1d20):
+19/20 = 0.95
+
+HP of golem ÷ Damage × P(Hit) = number of attacks =
+30 ÷ 5.5 × 0.95 = 5.741 attack to kill the golem
+
+------------------------------------------------------
+
+Stone golem
+– Fist (1d12)
+– AC 8
+– HP 30
+– TACO 12
+
+Fist (1d12):
+the probability to damage with this punch is:
+(1+2+3+4+5+6+7+8+9+10+11+12) ÷ 12 = 6.5 Damage
+
+TAC0 12:
+TAC0 - Probability
+0 - 12
+1 - 11
+2 - 10
+3 - 9 <- Elf
+4 - 8
+5 - 7
+6 - 6
+7 - 5
+8 - 4
+9 - 3
+10 - 2
+11 - 1
+12 - 0
+
+To hit you need to throw 1d20 so:
+3 - 9 <- Elf
+1 + 20 - 9 = 12
+
+Probability to hit with TAC0 12 an AC 3 (throwing a 1d20):
+12 ÷ 20 = 0.6
+
+HP of elf ÷ Damage × P(Hit) = number of attacks =
+12 ÷ 6.5 × 0.6 = 3.076 attack to kill the golem
